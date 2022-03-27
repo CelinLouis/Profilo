@@ -1,0 +1,189 @@
+body {
+	font-family: cursive;
+	font-size: 17px;
+}
+
+
+header {
+	background-color: grey;
+	height: auto;
+	margin: 8px;
+	text-align: center;
+}
+
+
+.menu-list{
+	font-family: monospace;
+	display: inline-flex;
+	font-size: 25px;
+	margin: 4px;
+	margin-left: 16px;
+}
+
+.menu-list a {
+	text-decoration: none;
+	color: black;
+}
+
+.menu-list a :: hover{
+	color: red;
+}
+
+.logo{
+	font-size: 35px;
+}
+
+.cv_celin {
+	display: block;
+	padding: 10px;
+	background: lightcyan;
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+}
+
+.competence-lang,.competence-fram,.competence-serv{
+	text-decoration: underline;
+}
+
+.cv{
+	display: inline-block;
+}
+
+.avatar_image{
+	display: inline-block;
+	width: 555px;
+	height: auto;
+}
+
+.body_section{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 10px;
+}
+
+.info{
+	display: flex;
+	flex-direction: row;
+}
+
+.info h2{
+	text-decoration: underline;
+}
+
+
+footer{
+	border-top: solid;
+	border-width: 0.5px;
+	border-color: black;
+}
+
+footer h2{
+	text-decoration: underline;
+	text-align: center;
+}
+
+.footer-menu div{
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+	body {
+		font-family: cursive;
+		font-size: 100%;
+		width: 100%;
+		text-align: center;
+	}
+
+	h1{
+		font-size: 100%;
+	}
+
+	.info-personnel, .info-formation, .info-competence, .info-langue, .info-hobit, .info-reference, .footer-menu, .avatar, header, footer{
+		width: 90%;
+	}
+
+	.body_section{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.info{
+		display: flex;
+		flex-direction: column;
+	}
+
+    .avatar_nom{
+    	font-size: 90%;
+    }
+
+	.avatar_image{
+		width: 95%;
+		height: auto;
+	}
+
+	.info-title{
+		font-size: 100%;
+	}
+
+	.info{
+		margin: 4px;
+	}
+
+	.footer-menu div{
+		display: flex;
+		flex-direction: column;
+		padding: 2px;
+	}
+
+	footer h2{
+		font-size: 100%;
+		text-align: center;
+	}
+
+	.list-references li{
+		list-style-type: none;
+		padding: 10px;
+	}
+
+	.list-hobbites li, .list-linguistique li, .list-serveur li, .list-BD li, .list-programmation li, .list-formation li{
+		list-style-type: none;
+		padding: 4px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	body {
+		font-family: cursive;
+		font-size: 100%;
+	}
+
+	h1{
+		font-size: 100%;
+	}
+
+	.body_section{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.avatar_nom{
+    	font-size: 90%;
+    }
+
+	.avatar_image{
+		width: 95%;
+		height: auto;
+	}
+
+	.list-references li{
+		padding: 5px;
+	}
+}
